@@ -20,4 +20,7 @@ def createTopicMapping(fileName):
                 topicFile.write('if (P === "") C = "' + item + '";\n')
         topicFile.close()
 
-createTopicMapping("topics.txt")
+fileName = raw_input("Name and extension of the output file: ")
+
+createTopicMapping(fileName)
+
